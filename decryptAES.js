@@ -4,12 +4,12 @@
 // @version      1.0
 // @description  Decrypt exams in Canvas
 // @author       Nicolás Boettcher
-// @updateURL    https://raw.githubusercontent.com/dragonxtek/canvaslms_js/master/decryptAES.js
+// @updateURL    https://raw.githubusercontent.com/dragonxtek/canvaslms_js/main/decryptAES.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/aes-js/3.1.2/index.min.js#sha512=LOqfKFwH2W3jeb0NzXcImFlSyoL7hjsWbZvIeKNOaZw1gFw+yKTE/QUDGLit2KWdd57qd6IgMDkppK2tkwIEhA==
 // @match        https://udp.instructure.com/courses/*
 // ==/UserScript==
 
-var questions=3
+var questions=4
 var key ='12345678901234567890123456789034';
 var key_bytes = aesjs.utils.hex.toBytes(key);
 var iv, iv_bytes, text, encryptedBytes, aes, decryptedBytes, decryptedText
